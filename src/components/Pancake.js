@@ -11,7 +11,7 @@ class Pancake extends React.Component {
   }
 
   componentDidMount() {
-    startInterval() ; 
+    startInterval() ;
   }
 
   // TODO: create a componentWillUnmount() which will clear the interval
@@ -58,7 +58,7 @@ class Pancake extends React.Component {
     let status = this.getPancakeStatus();
     this.props.takeItOff(id, status);
   };
-  
+
   render() {
     const { timeCooked, flippedAt } = this.state;
     const firstSide = Boolean(this.state.flippedAt === undefined);
